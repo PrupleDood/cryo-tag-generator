@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="vertical-menu" id="vm">
+        </div>
+        <div class="row" style="grid-row: 2;" id="row-1">
+        <a style="margin-right: 6.4em;"></a>
+        <select id="Row-1-D1"></select>
+        <input name="numbers" id="Row-1-N1" type="text" placeholder="00">
+        -
+        <input name="numbers" id="Row-1-N2" type="text" placeholder="000">
+        -
+        <input name="numbers" id="Row-1-N3" type="text" placeholder="000">
+        </div>
+
+        <div class="row" style="grid-row: 3;" id="row-2">
+        <label for="Row-2-C1">Add</label>
+        <input type="checkbox" id="Row-2-C1" name="Row-2-C1">
+        D-
+        <input name="numbers" id="Row-2-N1" type="text" placeholder="Number">
+        <p style="margin-left: 1em;"></p>
+        <select id="Row-2-D1"></select>
+        <select id="Row-2-D2"></select>
+        <input name="numbers" id="Row-2-N2" type="text" placeholder="Year">
+        </div>
+
+        <div class="row" style="grid-row: 4;">
+        <label for="Row-3-C1">Add</label>
+        <input type="checkbox" id="Row-3-C1" name="Row-3-C1">
+        <p style="margin-right: 0.2em;">(ET):</p> 
+        <input name="numbers" id="Row-3-N1" type="text" placeholder="000">
+        </div>
+
+        <div class="row" style="grid-row: 5;">
+        <a style="margin-right: 6.4em;"></a>
+        <input name="characters" id="Row-4-T1" name="Row-4-T1" placeholder="AAA">
+        -
+        <p id="Row-4-P1">A</p>
+        <p id="Row-4-P2">00</p>
+        -
+        <p id="Row-4-P3" style="margin-right: 10px;">000</p>
+
+        <input name="characters" id="Row-4-T2" name="Row-4-L2" placeholder="Optional">
+        <input type="checkbox" id="Row-4-C1" name="Row-4-C1">
+        <label for="Row-4-C1">Add Optional</label>
+        </div>
+        <button class="main-button" id="generate">Download Text File</button>
+        <button class="main-button" style="margin-left: 40em" id="submit">Generate Label</button>
+
+        <div class="options-row" style="grid-row: 2;">
+            
+        <select id="OD1"></select>
+        <div class="second-row">    
+        <input type="checkbox" id="OC1-1" name="OC1-1">
+        <input type="checkbox" id="OC1-2" name="OC1-2">
+        <input type="checkbox" id="OC1-3" name="OC1-3">
+        </div>
+        </div>
+
+        <div class="options-row" style="grid-row: 3;">
+        <select id="OD2"></select>
+        <div class="second-row">
+        <input type="checkbox" id="OC2-1" name="OC2-1">
+        <input type="checkbox" id="OC2-2" name="OC2-2">
+        </div>
+        </div>
+
+        <div class="options-row" style="grid-row: 4;">
+        <select id="OD3"></select>
+        <div class="second-row">
+        <input type="checkbox" id="OC3-1" name="OC3-1">
+        </div>
+        </div>
+
+
+        <a style="grid-column: 5; grid-row: 2; align-self: center;">
+            Instructions:
+            <br>
+            1. Enter label data into form
+            <br>
+            2. Click the generate label button
+            <br>
+            3. When done click the Generate Text File button
+            <br>
+            4. Save file to path specified in console
+        </a>    
+    </div>
+
+    <script src="./js/formating.js"></script>
+</body>
+</html>

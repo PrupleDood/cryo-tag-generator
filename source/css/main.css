@@ -1,0 +1,248 @@
+:root {
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --monospace-font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    --white: #ffffff;
+    --grey-1: #f9f9fa;
+    --grey-1-8: rgba(249, 249, 250, 0.8);
+    --grey-2: #ededf0;
+    --grey-3: #d7d7db;
+    --grey-4: #b1b1b3;
+    --grey-5: #737373;
+    --grey-6: #4a4a4f;
+    --grey-7: #38383d;
+    --grey-8: #2a2a2e;
+    --black: #0c0c0d;
+    --blue-1: #3399ff;
+    --blue-2: #0a84ff;
+    --blue-3: #0060df;
+    --blue-4: #003eaa;
+    --blue-5: #002275;
+    --blue-6: #000f40;
+    --settings: var(--grey-1);
+    --settings-hover: var(--grey-1-8);
+    --main-background: var(--grey-1);
+    --link-text: var(--blue-2);
+    --link-hover-text: var(--blue-6);
+    --main-text: var(--black);
+    --mobile-nav-background: var(--black);
+    --mobile-nav-text: var(--white);
+    --mobile-nav-hover-text: var(--white);
+    --mobile-nav-header-text: var(--white);
+    --nav-background: var(--main-background);
+    --nav-text: var(--grey-6);
+    --nav-hover-text: var(--grey-6);
+    --nav-header-text: var(--black);
+    --sub-header-background: var(--grey-6);
+    --search-border: var(--grey-4);
+    --search-text: var(--white);
+    --search-focus: var(--blue-1);
+    --search-button: var(--grey-1);
+    --search-button-hover: var(--grey-1-8);
+    --search-sidebar-background: var(--grey-1);
+    --search-sidebar-text: var(--grey-7);
+    --footer-text: var(--grey-5);
+    --footer-link: var(--grey-6);
+    --hr-border: var(--grey-2);
+    --main-big-headers-text: var(--black);
+    --main-big-headers-border: var(--grey-4);
+    --main-h5-header-text: var(--black);
+    --main-h6-header-text: var(--grey-4);
+    --main-h4-header-border: var(--grey-4);
+    --header-link: var(--grey-6);
+    --header-link-hover-text: var(--white);
+    --admonition-background: var(--grey-2);
+    --note-background: var(--blue-1);
+    --note-text: var(--white);
+    --warning-background: #ffe900;
+    --warning-text: var(--black);
+    --error-background: #d70022;
+    --error-text: var(--white);
+    --helpful-background: #00c8d7;
+    --helpful-text: var(--black);
+    --codeblock-background: var(--grey-2);
+    --codeblock-border: var(--grey-4);
+    --codeblock-text: var(--grey-6);
+    --inline-code-background: var(--grey-3);
+    --xref-code-background: transparent;
+    --api-entry-background: var(--grey-2);
+    --table-header-background: var(--grey-3);
+    --table-text: var(--black);
+    --table-border: var(--grey-4);
+    --mobile-active-toc: var(--grey-7);
+    --active-toc: var(--grey-3);
+    --scrollbar: rgba(0, 0, 0, 0.2);
+    --scrollbar-hover: rgba(0, 0, 0, 0.4);
+    --rtd-ad-border: var(--grey-3);
+    --rtd-ad-background: var(--grey-2);
+    --rtd-ad-main-text: var(--grey-6);
+    --rtd-ad-small-text: var(--grey-4);
+    --rtd-version-background: #272525;
+    --rtd-version-main-text: #fcfcfc;
+    --attribute-table-title: var(--grey-6);
+    --attribute-table-entry-border: var(--grey-3);
+    --attribute-table-entry-text: var(--grey-5);
+    --attribute-table-entry-hover-border: var(--blue-2);
+    --attribute-table-entry-hover-background: var(--grey-2);
+    --attribute-table-entry-hover-text: var(--blue-2);
+    --attribute-table-badge: var(--grey-7);
+    --highlighted-text: rgb(252, 233, 103);
+}
+
+:root[data-theme="dark"] {
+    --main-background: var(--grey-7);
+    --link-text: var(--blue-1);
+    --link-hover-text: var(--blue-2);
+    --main-text: var(--white);
+    --sub-header-background: var(--grey-8);
+    --search-border: var(--grey-5);
+    --nav-background: var(--main-background);
+    --nav-text: var(--grey-1);
+    --nav-hover-text: var(--grey-2);
+    --nav-header-text: var(--white);
+    --footer-text: var(--grey-2);
+    --footer-link: var(--grey-1);
+    --hr-border: var(--grey-1);
+    --main-big-headers-text: var(--grey-1);
+    --main-big-headers-border: var(--grey-1);
+    --main-h5-header-text: var(--grey-4);
+    --main-h6-header-text: var(--grey-5);
+    --main-h4-header-border: var(--grey-2);
+    --header-link: var(--grey-2);
+    --header-link-hover-text: var(--grey-6);
+    --admonition-background: var(--grey-8);
+    --note-background: var(--blue-3);
+    --note-text: var(--white);
+    --warning-background: #d7b600;
+    --warning-text: var(--black);
+    --error-background: #d70022;
+    --error-text: var(--white);
+    --helpful-background: #008ea4;
+    --helpful-text: var(--white);
+    --codeblock-background: var(--grey-6);
+    --codeblock-border: var(--black);
+    --codeblock-text: var(--grey-1);
+    --inline-code-background: var(--grey-8);
+    --xref-code-background: transparent;
+    --api-entry-background: var(--grey-6);
+    --table-header-background: var(--grey-6);
+    --table-text: var(--grey-1);
+    --table-border: var(--grey-4);
+    --active-toc: var(--grey-6);
+    --scrollbar: rgba(0, 0, 0, 0.5);
+    --scrollbar-hover: rgba(0, 0, 0, 0.7);
+    --rtd-ad-border: var(--grey-6);
+    --rtd-ad-background: var(--grey-5);
+    --rtd-ad-main-text: var(--grey-2);
+    --rtd-ad-small-text: var(--grey-1);
+    --attribute-table-title: var(--grey-3);
+    --attribute-table-entry-border: var(--grey-5);
+    --attribute-table-entry-text: var(--grey-3);
+    --attribute-table-entry-hover-border: var(--blue-1);
+    --attribute-table-entry-hover-background: var(--grey-6);
+    --attribute-table-entry-hover-text: var(--blue-1);
+    --attribute-table-badge: var(--grey-4);
+    --highlighted-text: rgba(250, 166, 26, 0.2);
+    --search-sidebar-background: var(--grey-7);
+    --search-sidebar-text: var(--search-text);
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--main-background);
+    color: var(--main-text);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    /* 1fr = 1 fraction of avalible space    */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 1fr 0.5fr 0.5fr 1fr 100px;
+
+    /* gap: 10px; */
+    box-sizing: border-box;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 2em;
+    text-align: left;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.row{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+}
+
+select {
+    height: 2.4em;
+    margin-right: 2px;    
+}
+
+input {
+    height: 2em;
+    width: 5em;
+}
+
+button {
+    height: 40px;
+    width: 70px;
+}
+
+.main-button {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.vertical-menu {
+    grid-column: 1;
+    grid-row: 1/7;
+    width: 12em;
+    overflow-y: auto;
+    margin-right: 2em;
+}
+
+.vertical-menu a {
+    text-align: center;
+    background-color: var(--nav-background);
+    color: var(--nav-text);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    color: var(--nav-hover-text);
+    background-color: var(--search-button-hover);
+}
+
+.vertical-menu button {
+    margin-top: 1em;
+    height: 2em;
+    width: 5em;
+}
+
+.options-row {
+    grid-column: 3/5;
+    grid-row: 2/6;
+    width: 12em;
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.options-row .second-row {
+    grid-column: 5;
+    display: flex;
+    border-color: #d70022;
+}
